@@ -1,0 +1,36 @@
+{{!-- footer --}}
+<footer class="Layout-footer">
+  <div class="MainFooter Layout-wrapper">
+    <div class="MainFooter-top">
+      <div class="MainFooter-col2">
+        <a href="{{@blog.url}}">
+          <img src="{{asset "images/logo_guerrerodev.png"}}" alt="Logo Guerrerodev" class="imgLogoFooter">
+        </a>
+        <p class="text">{{@blog.description}}</p>
+      </div>
+
+      <div class="MainFooter-col2">
+        <a href="https://m.do.co/c/65cf8cb28f91">
+          <img src="{{asset "images/logo_digital_ocean.png"}}" alt="Logo Digital Ocean" class="imgLogoFooter" target="_blank">
+        </a>
+
+        <p class="text">Publicado en <a href="#">Ghost</a> y Alojado en <a href="https://m.do.co/c/65cf8cb28f91">Digital Ocean</a> </p>
+      </div>
+
+    </div>
+    <div class="MainFooter-bottom">
+      <div class="SocialLinks SocialLinks--footer center">
+        {{> social-links}}
+      </div>
+      <nav class="MenuFooter">
+        <ul class="MenuFooter-list">
+          {{!-- navigation --}}
+          {{navigation}}
+        </ul>
+      </nav>
+      <p class="MenuFooter-copyrightText">
+        (C) {{@blog.title}} 2016
+      </p>
+    </div>
+  </div>
+</footer>
